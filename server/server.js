@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express();
 const PORT = 3005;
 app.use(cors({
-  origin: 'https://your-frontend-name.vercel.app'
+  origin: 'https://weather-dashboard-client-dusky.vercel.app'
 }));
 app.get("/weather", async (req, res) => {
   const city = req.query.city;
